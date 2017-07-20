@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainController">
+   <center>
+      <MediaView fx:id="mv" fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="34.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#play" prefHeight="25.0" prefWidth="65.0" text="play" />
+            <Button mnemonicParsing="false" onAction="#pause" prefHeight="25.0" prefWidth="65.0" text="pause" />
+            <Button mnemonicParsing="false" onAction="#fast" prefHeight="25.0" prefWidth="65.0" text="fast" />
+            <Button mnemonicParsing="false" onAction="#slow" prefHeight="25.0" prefWidth="65.0" text="slow" />
+            <Button mnemonicParsing="false" onAction="#Reload" prefHeight="25.0" prefWidth="65.0" text="reload" />
+            <Button mnemonicParsing="false" onAction="#start" prefHeight="25.0" prefWidth="65.0" text="start" />
+            <Button mnemonicParsing="false" onAction="#last" prefHeight="25.0" prefWidth="65.0" text="last" />
+            <Button mnemonicParsing="false" onAction="#resume" prefHeight="25.0" prefWidth="65.0" text="resume" />
+            <Slider fx:id="volumeslider" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
